@@ -1,0 +1,129 @@
+
+
+.tj-wifi-container {
+    padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.tj-wifi-container input,
+.tj-wifi-container select {
+    width: 100% !important;
+    padding: 12px !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    font-size: 15px !important;
+    transition: all 0.3s ease !important;
+    box-sizing: border-box !important;
+    background: #f8fafc !important;
+    margin-bottom: 12px !important;
+    color: #1a202c !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}
+
+.tj-wifi-container select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 12px center !important;
+    background-size: 16px !important;
+    padding-right: 40px !important;
+}
+
+.tj-wifi-container input:focus,
+.tj-wifi-container select:focus {
+    border-color: #3b82f6 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+    background: white !important;
+}
+
+.tj-wifi-container button {
+    width: 100% !important;
+    padding: 14px !important;
+    border: none !important;
+    border-radius: 16px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    margin-bottom: 12px !important;
+    color: white !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.tj-wifi-container button:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+.tj-wifi-container button:active {
+    transform: translateY(0) !important;
+}
+
+.tj-wifi-container button.login-btn {
+    background: linear-gradient(135deg, #3b82f6, #10b981) !important;
+}
+
+.tj-wifi-container button.logout-btn {
+    background: linear-gradient(135deg, #ef4444, #f59e0b) !important;
+}
+
+.tj-wifi-container button.device-btn {
+    background: linear-gradient(135deg, #06b6d4, #0ea5e9) !important;
+}
+
+.status-card {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    overflow: hidden !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+.status-card {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.status-card.info {
+    background-color: #e6f7ff;
+    color: #1890ff;
+}
+
+.status-card.error {
+    background-color: #fff1f0;
+    color: #f5222d;
+}
+
+.status-card.success {
+    background-color: #f6ffed;
+    color: #52c41a;
+}
+
+.device-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.device-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.device-list li strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}

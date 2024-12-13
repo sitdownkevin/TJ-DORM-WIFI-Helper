@@ -1,0 +1,56 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TJ-DORM-WIFI-HELPER</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="login-container" class="tj-wifi-container">
+      <h2
+        style="
+          margin: 0 0 20px 0;
+          text-align: center;
+          color: #2c3e50;
+          font-size: 20px;
+          font-weight: 600;
+        "
+      >
+        TJ-DORM-WIFI 辅助
+      </h2>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          margin-bottom: 20px;
+        "
+      >
+        <input id="url" type="text" placeholder="URL" value="172.21.0.54"/>
+        <input id="username" type="text" placeholder="学号" value="" />
+        <input id="password" type="password" placeholder="密码" value="" />
+        <select id="network-type">
+          <option value="0">校园网</option>
+          <option value="2">中国移动</option>
+          <option value="3">中国联通</option>
+          <option value="4">中国电信</option>
+        </select>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+          "
+        >
+          <button class="login-btn">登录</button>
+          <button class="logout-btn">登出</button>
+          <button class="device-btn">查看设备列表</button>
+        </div>
+      </div>
+      <div id="login-status" class="status-card">No Information</div>
+      <div id="device-list" class="device-list" style="margin-top: 15px; display: block"></div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>

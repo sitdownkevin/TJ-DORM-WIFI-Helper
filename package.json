@@ -1,0 +1,36 @@
+{
+  "name": "tj-dorm-wifi-helper",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "export NODE_ENV=development && electron . --inspect=5858",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.tj-dorm-wifi-helper",
+    "productName": "TJ-DORM-WIFI-Helper",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "index.html",
+      "renderer.js",
+      "utils.js",
+      "styles.css",
+      "icon.png"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^24.13.3",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "iconv-lite": "^0.6.3"
+  }
+}
