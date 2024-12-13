@@ -5,6 +5,7 @@
   "scripts": {
     "start": "electron .",
     "dev": "export NODE_ENV=development && electron . --inspect=5858",
+    "dev-win": "set NODE_ENV=development && electron . --inspect=5858",
     "build": "electron-builder"
   },
   "build": {
