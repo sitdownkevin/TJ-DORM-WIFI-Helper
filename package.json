@@ -22,7 +22,10 @@
       "utils.js",
       "styles.css",
       "icon.png"
-    ]
+    ],
+    "win": {
+      "target": "portable"
+    }
   },
   "devDependencies": {
     "electron": "^33.2.1",
