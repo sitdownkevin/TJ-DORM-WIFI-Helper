@@ -25,6 +25,11 @@
     ],
     "win": {
       "target": "portable"
+    },
+    "publish": {
+      "provider": "github",
+      "repo": "TJ-DORM-WIFI-Helper",
+      "owner": "sitdownkevin"
     }
   },
   "devDependencies": {
