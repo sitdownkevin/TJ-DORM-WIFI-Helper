@@ -26,18 +26,19 @@ jobs:
 
     - name: Build application
       run: npm run build
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-        
+    - name: Get version from package.json
+      id: get_version
+      run: echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
+
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.ref_name }}
-        release_name: Release ${{ github.ref_name }}
+        tag_name: ${{ env.VERSION }}
+        release_name: ${{ env.VERSION }}
         draft: false
         prerelease: false
 
@@ -48,7 +49,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./build/TJ-DORM-WIFI-Helper-1.0.0-arm64.dmg
+        asset_path: ./build/TJ-DORM-WIFI-Helper-${{ env.VERSION }}-arm64.dmg
         asset_name: TJ-DORM-WIFI-Helper-arm64.dmg
         asset_content_type: application/octet-stream
 
@@ -59,6 +60,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./build/TJ-DORM-WIFI-Helper-1.0.0.exe
+        asset_path: ./build/TJ-DORM-WIFI-Helper-${{ env.VERSION }}.exe
         asset_name: TJ-DORM-WIFI-Helper.exe
         asset_content_type: application/octet-stream
