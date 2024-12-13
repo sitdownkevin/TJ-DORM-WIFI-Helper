@@ -29,9 +29,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: List build directory contents
-      run: ls -la build/
-  
+        
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
