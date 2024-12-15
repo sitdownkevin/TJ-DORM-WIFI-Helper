@@ -7,3 +7,25 @@
 # 演示
 
 ![](./demo.png)
+
+# 使用
+
+## 直接下载
+
+[Win 版本](https://github.com/sitdownkevin/TJ-DORM-WIFI-Helper/releases/download/1.0.2/TJ-DORM-WIFI-Helper.exe)
+
+[Mac 版本](https://github.com/sitdownkevin/TJ-DORM-WIFI-Helper/releases/download/1.0.2/TJ-DORM-WIFI-Helper-arm64.dmg)
+
+## 从源码构建
+
+1. 安装需要的 package
+
+```
+npm install
+```
+
+2. 构建
+
+```
+npm build
+```
