@@ -12,9 +12,9 @@
 
 ## 直接下载
 
-[Win 版本](https://github.com/sitdownkevin/TJ-DORM-WIFI-Helper/releases/download/1.0.2/TJ-DORM-WIFI-Helper.exe)
+[Windows](https://github.com/sitdownkevin/TJ-DORM-WIFI-Helper/releases/download/1.0.2/TJ-DORM-WIFI-Helper.exe)
 
-[Mac 版本 Arm](https://github.com/sitdownkevin/TJ-DORM-WIFI-Helper/releases/download/1.0.2/TJ-DORM-WIFI-Helper-arm64.dmg)
+[macOS Arm](https://github.com/sitdownkevin/TJ-DORM-WIFI-Helper/releases/download/1.0.2/TJ-DORM-WIFI-Helper-arm64.dmg)
 
 ## 从源码构建
 
